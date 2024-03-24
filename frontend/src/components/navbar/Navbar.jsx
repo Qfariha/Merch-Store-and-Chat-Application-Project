@@ -2,14 +2,22 @@ import React from 'react'
 import LogoutButton from '../sidebar/LogoutButton';
 import { useAuthContext } from '../../context/AuthContext'; 
 import { Link } from 'react-router-dom';
+
+
 const Navbar = () => {
   const { authUser } = useAuthContext();
   return (
     <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a className="btn btn-ghost text-3xl font-mono text-red-500"><Link to="/">Hello World</Link></a>
+    <a className="btn btn-ghost text-3xl font-mono text-red-500"><Link to="/">Website Name</Link></a>
   </div>
   <div className="flex-none gap-2">
+  <div>
+      <a className="btn btn-ghost text-xl font-mono"><Link to="/store">Store</Link></a>
+    </div>
+    <div>
+      <a className="btn btn-ghost text-xl font-mono"><Link to="/store/cart">Cart</Link></a>
+    </div>
     <div className="form-control">
       <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
     </div>
@@ -29,7 +37,10 @@ const Navbar = () => {
         <li>
           <Link to="/chat">Chat</Link>
         </li>
-        <li><a>Settings</a></li>
+        <li>
+          <Link to="/store">Store</Link>
+        </li>
+        <li><Link to="/store/cart">Cart</Link></li>
         <li><LogoutButton /></li>
       </ul>
     </div>
