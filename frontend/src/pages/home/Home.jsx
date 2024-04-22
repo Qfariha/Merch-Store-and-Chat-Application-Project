@@ -1,10 +1,12 @@
+import MoviePage from "../movie/MoviePage";
 
 const Home = () => {
   return (
-	<div>
-		<h1 className="btn btn-ghost text-4xl font-mono text-red-500">Welcome</h1>
-	</div>
-  )
-}
+    <div className="h-full">
+      <MoviePage />
+    </div>
+  );
+};
 
-export default Home;
+export default Home;
+

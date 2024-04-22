@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "anime-streaming": "file:..",
     "axios": "^1.6.7",
     "chat-app-yt": "file:..",
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
